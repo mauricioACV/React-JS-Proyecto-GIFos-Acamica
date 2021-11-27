@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Proyecto GIFos - Permite la búsqueda de gifs por palabras claves.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto React JS. Desarrollado para la entrega del sprint N°3 curso Desarrollo Web Front End - Acamica.
 
-## Available Scripts
+## Decripción del Desarrollo del Proyecto
 
-In the project directory, you can run:
+Para el desarrollo se consideraron los detalles siguientes:
 
-### `yarn start`
+### `Hook useState`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Se utilizó el hook useState para el manejo de estado de los filtros de la app.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `Componentes`
 
-### `yarn test`
+Se crea dentro de carpeta "src" una subcarpeta llamada "components" para alojar los distintos componentes de la app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- AutocompleteCategory.jsx: Componente que se encarga de mostrar sugerencias de autocompletado de palabra clave para búsqueda de gifs.  
+- GifGridItem.jsx: Componente con la estructura necesaria para mostrar un gif y ofrecer la posibilidad de visitar acceder al gif en su página de origen. 
+- GiphySearchBar.jsx: Componente que provee barra de búsqueda para escribir palabra clave para la obtención de gifs (incorpora el componente AutocompleteCategory.jsx).  
+- GridResult.jsx: Componente que renderiza los resultados de la búsqueda de gifs.  
+- Header.jsx: Componente que renderiza el logo de la página, y además el botón para alternar entre modo claro y oscuro.  
+- NotFoundResult.jsx: Componente que se renderiza en caso de no encontrar resultados en la búsqueda de gifs.
 
-### `yarn build`
+### `Context`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Se utiliza React Context en el proyecto como alternativa a prop drilling, coin el objetivo de compartir entre componentes datos y estados, por ejemplo, indicar a cada componente de si el usuario alternó entre el modo claro y oscuro de la app. Context está diseñado para compartir datos que pueden considerarse “globales” para un árbol de componentes en React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Helpers`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Se crea dentro de carpeta "src" una subcarpeta llamada "Helpers", que contiene archivos javascript con funciones que utilizo para manejar datos en componentes, como es el caso de la obtención de sugerencias de autocompletado de palabra clave y la obtención de gifs directamente, ambos usan fetch para obtener la data. Además el helper getGifs.js integra una técnica de memorizado de estado, cuya implementación de esto último se encutra en la carpeta "Hooks".
 
-### `yarn eject`
+### `Hooks`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Se crea dentro de carpeta "src" una subcarpeta llamada "Hooks", que contiene dos archivos. El primero llamado "customMemoization.js", es una implementación que permite memoriozar estados, y la desarrollé a modo de entrenamiento, ya que existe React.memo (higher order component) como herramienta de optimización ded performance. El segundo archivo llamado "useFetchGif.js" se utiliza para obtención de gif y este integra el helper "getGifs.js".
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Imgs`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Se crea dentro de carpeta "src" una subcarpeta llamada "imgs", que contiene subcarpetas para alojar archivos svg y png que utiliza la app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## CodeSanbox del Proyecto
 
-## Learn More
+Puedes revisar el código de esta app y modificarlo online [haciendo click aquí](https://codesandbox.io/s/gifos-app-7mn1s).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Enlace del Proyecto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Puedes utilizar la app en el siguiente enlace: [click para ver GIFos en acción](https://7mn1s.csb.app/).

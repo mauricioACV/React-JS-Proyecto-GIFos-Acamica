@@ -1,0 +1,150 @@
+.App {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 900px;
+  }
+
+  body {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    font-size: 1.2 rem;
+    color: grey;
+    width: 60%;
+    border: 1px solid #121212;
+    box-sizing: border-box;
+    border-radius: 61px 0px 0px 61px;
+    border-right: none;
+    height: 52px;
+    padding: 20px;
+    font-size: 18px;
+    outline: none;
+  }
+
+  .gridResult-title {
+    color: #572EE5;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28,13px;
+  }
+
+  .gif-Img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.grid-container {
+  background-color: #E7E7E7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-gif {
+  width: 250px;
+  margin: 20px 10px 10px 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #572EE5;
+  border-radius: 0px 61px 61px 0px;
+  width: 86px;
+}
+
+.search-svg {
+  width: 20px;
+}
+
+.header-img {
+  margin-bottom: -4px;
+}
+
+.header-container {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-dark-mode {
+  border-color: #572EE5;
+  color: #572EE5;
+  border-radius: 61px;
+  background: #fff;
+  width: 148px;
+  height: 43px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-dark-mode:hover {
+  background-color: rgb(80, 227, 194);
+  border: none;
+}
+
+.header-text-start,
+.header-text-end {
+  color: #572EE5;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.header-text-end {
+  font-weight: 700;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+  width: 610px;
+  border: 1px solid black;
+  top: 438px;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.li-autocomplete {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 40px;
+  width:100%;
+  height: 40px;
+  border: 0.5px solid rgb(220, 217, 220);
+  list-style: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.li-autocomplete:hover{
+  background-color: bisque;
+}
+
+.search-icon-auto {
+  width: 20px;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  cursor: pointer;
+}
