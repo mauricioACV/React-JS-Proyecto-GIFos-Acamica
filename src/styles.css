@@ -1,44 +1,65 @@
 .App {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    width: 900px;
-  }
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-  body {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-  }
+.component-container {
+  padding-top: 50px;
+  width: 950px;
+}
+body {
+  border-top: 8px solid #572ee5;
+  outline: none;
+  margin: 0;
+}
 
-  input {
-    font-size: 1.2 rem;
-    color: grey;
-    width: 60%;
-    border: 1px solid #121212;
-    box-sizing: border-box;
-    border-radius: 61px 0px 0px 61px;
-    border-right: none;
-    height: 52px;
-    padding: 20px;
-    font-size: 18px;
-    outline: none;
-  }
+.input-format {
+  font-size: 1.2 rem;
+  width: 60%;
+  box-sizing: border-box;
+  border-radius: 61px 0px 0px 61px;
+  border-right: none;
+  height: 52px;
+  padding: 20px;
+  font-size: 18px;
+  outline: none;
+}
 
-  .gridResult-title {
-    color: #572EE5;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28,13px;
-  }
+.input-light {
+  color: grey;
+  border: 1px solid #572ee5;
+}
 
-  .gif-Img {
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
+.input-dark {
+  background-color: #373737;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.gridResult-title {
+  color: #572ee5;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28, 13px;
+}
+
+.gif-Img {
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.88);
+  border-radius: 7px;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.gif-Img:hover {
+  box-shadow: 0px 0px 23px 3px #572ee5;
 }
 
 .grid-container {
-  background-color: #E7E7E7;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -54,11 +75,21 @@
   justify-content: center;
 }
 
-.search-icon-container {
+.search-icon-container-light {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #572EE5;
+  background-color: #572ee5;
+  border-radius: 0px 61px 61px 0px;
+  width: 86px;
+}
+
+.search-icon-container-dark {
+  border-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #572ee5;
   border-radius: 0px 61px 61px 0px;
   width: 86px;
 }
@@ -83,11 +114,13 @@
   align-items: center;
 }
 
-.btn-dark-mode {
-  border-color: #572EE5;
-  color: #572EE5;
+.top-line-header {
+  height: 10px;
+  background-color: #572ee5;
+}
+
+.btn-format {
   border-radius: 61px;
-  background: #fff;
   width: 148px;
   height: 43px;
   cursor: pointer;
@@ -95,14 +128,35 @@
   font-size: 14px;
 }
 
-.btn-dark-mode:hover {
+.btn-mode-light {
+  border: 1px solid #572ee5;
+  color: #572ee5;
+  border-radius: 61px;
+  background: #fff;
+}
+
+.btn-mode-light:hover {
   background-color: rgb(80, 227, 194);
+  color: #572ee5;
+  border: none;
+}
+
+.btn-mode-dark {
+  border: 1px solid rgb(172, 165, 165);
+  color: #fff;
+  border-radius: 61px;
+  background: #572ee5;
+}
+
+.btn-mode-dark:hover {
+  background-color: rgb(80, 227, 194);
+  color: #572ee5;
   border: none;
 }
 
 .header-text-start,
 .header-text-end {
-  color: #572EE5;
+  color: #572ee5;
   font-weight: 400;
   font-size: 36px;
 }
@@ -117,28 +171,31 @@
 
 .p-absolute {
   position: absolute;
-  width: 610px;
-  border: 1px solid black;
-  top: 438px;
+  width: 630px;
+  border: 2px solid #572ee5;
+  top: 475px;
   overflow: hidden;
   border-radius: 10px;
   z-index: 1;
 }
 
-.li-autocomplete {
+.li-autocomplete-light {
+  margin: 0;
   display: flex;
   align-items: center;
   padding: 5px 10px 5px 40px;
-  width:100%;
+  width: 100%;
   height: 40px;
   border: 0.5px solid rgb(220, 217, 220);
   list-style: none;
-  background-color: white;
+  background-color: #fff;
+  color: rgb(116, 115, 115);
   cursor: pointer;
 }
 
-.li-autocomplete:hover{
-  background-color: bisque;
+.li-autocomplete-light:hover {
+  color: #000;
+  background-color: #b3a8da;
 }
 
 .search-icon-auto {
@@ -147,4 +204,42 @@
   top: 16px;
   left: 10px;
   cursor: pointer;
+}
+
+.b-radius5 {
+  border-radius: 5px;
+}
+
+.li-autocomplete-dark {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 40px;
+  width: 100%;
+  height: 40px;
+  border: 0.5px solid #572ee5;
+  list-style: none;
+  background-color: #373737;
+  color: #fff;
+  cursor: pointer;
+}
+
+.li-autocomplete-dark:hover {
+  background-color: #572ee5;
+}
+
+.mode-dark {
+  background-color: #373737;
+  color: white;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.not-found-img {
+  width: 410px;
+}
+
+.color-w {
+  color: #fff;
 }

@@ -1,4 +1,4 @@
-# Proyecto GIFos - Permite la búsqueda de gifs por palabras claves.
+# Proyecto GIFos - Permite la búsqueda de gifs por palabras claves y al iniciar, muestra 15 trending gif.
 
 Proyecto React JS. Desarrollado para la entrega del sprint N°3 curso Desarrollo Web Front End - Acamica.
 
