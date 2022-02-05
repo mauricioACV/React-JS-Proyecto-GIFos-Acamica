@@ -1,0 +1,38 @@
+@media screen and (max-width: 690px) {
+    .header-container {
+      padding: 0px 25px;
+      align-items: center;
+    }
+  
+    .header-container img {
+      width: 43px;
+    }
+  
+    .btn-format {
+      width: 95px;
+      height: 35px;
+      font-size: 11px;
+    }
+  
+    .header-title-container p {
+      font-size: 20px;
+    }
+  
+    .header-img {
+      width: 250px;
+    }
+  
+    .gridResult-title {
+      font-size: 18px;
+    }
+  
+    .not-found-img {
+      width: 250px;
+    }
+  
+    .p-absolute {
+      width: 330px;
+      top: 336px;
+    }
+  }
+  

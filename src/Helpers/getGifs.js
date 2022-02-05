@@ -1,4 +1,4 @@
-import { customMemoization } from "../Hooks/customMemoization";
+import { customMemoization } from "./customMemoization";
 
 export const getGifs = customMemoization(async (category) => {
   const apiKey = "gXsfPNJlsOfkekKEAerHBmwthwr5XXXJ";
