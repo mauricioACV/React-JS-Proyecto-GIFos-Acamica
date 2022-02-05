@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-JS-Proyecto-GIFos-Acamica/static/css/main.d0ad29b4.chunk.css",
+    "main.js": "/React-JS-Proyecto-GIFos-Acamica/static/js/main.d9865509.chunk.js",
+    "main.js.map": "/React-JS-Proyecto-GIFos-Acamica/static/js/main.d9865509.chunk.js.map",
+    "runtime-main.js": "/React-JS-Proyecto-GIFos-Acamica/static/js/runtime-main.584f6db2.js",
+    "runtime-main.js.map": "/React-JS-Proyecto-GIFos-Acamica/static/js/runtime-main.584f6db2.js.map",
+    "static/js/2.97a957db.chunk.js": "/React-JS-Proyecto-GIFos-Acamica/static/js/2.97a957db.chunk.js",
+    "static/js/2.97a957db.chunk.js.map": "/React-JS-Proyecto-GIFos-Acamica/static/js/2.97a957db.chunk.js.map",
+    "index.html": "/React-JS-Proyecto-GIFos-Acamica/index.html",
+    "static/css/main.d0ad29b4.chunk.css.map": "/React-JS-Proyecto-GIFos-Acamica/static/css/main.d0ad29b4.chunk.css.map",
+    "static/js/2.97a957db.chunk.js.LICENSE.txt": "/React-JS-Proyecto-GIFos-Acamica/static/js/2.97a957db.chunk.js.LICENSE.txt",
+    "static/media/error.da5924c7.png": "/React-JS-Proyecto-GIFos-Acamica/static/media/error.da5924c7.png",
+    "static/media/icon-search-mod-noc.ecc2b197.svg": "/React-JS-Proyecto-GIFos-Acamica/static/media/icon-search-mod-noc.ecc2b197.svg",
+    "static/media/icon-search.657bf939.svg": "/React-JS-Proyecto-GIFos-Acamica/static/media/icon-search.657bf939.svg",
+    "static/media/ilustra_header.9d4669b1.svg": "/React-JS-Proyecto-GIFos-Acamica/static/media/ilustra_header.9d4669b1.svg",
+    "static/media/logo-desktop.2f122678.svg": "/React-JS-Proyecto-GIFos-Acamica/static/media/logo-desktop.2f122678.svg",
+    "static/media/logo-mobile-modo-noct.8c791325.svg": "/React-JS-Proyecto-GIFos-Acamica/static/media/logo-mobile-modo-noct.8c791325.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.584f6db2.js",
+    "static/js/2.97a957db.chunk.js",
+    "static/css/main.d0ad29b4.chunk.css",
+    "static/js/main.d9865509.chunk.js"
+  ]
+}
